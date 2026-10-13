@@ -33,12 +33,16 @@ The design uses VLANs to separate departmental traffic logically and VLSM to all
 
 ## Verification
 
-Connectivity was tested from an internal departmental PC to an external server in the simulated network. Additional configuration details and screenshots will be documented as the project files are organized.
+The network was tested to confirm connectivity between an internal departmental PC and an external server in the simulated network. A successful ICMP ping confirmed end-to-end reachability.
+
+NAT/PAT operation was also verified using the router's NAT translation table and NAT statistics, providing evidence of address translation for traffic originating from the internal network.
+
+Screenshots of the network topology, connectivity test, and NAT/PAT verification are included in the `screenshots/` directory.
 
 ## Project Files
 
-- `school-network.pkt` — Cisco Packet Tracer simulation file.
-- `screenshots/` — Selected images showing the network architecture and verification results.
+- `School_network.pkt` — Cisco Packet Tracer simulation file.
+- `screenshots/` — Screenshots showing the network architecture and connectivity verification.
 
 ## Scope
 
