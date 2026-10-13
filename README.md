@@ -27,17 +27,28 @@ The design focuses on network segmentation, efficient IP address allocation, cen
 
 ## Network Architecture
 
-The proposed architecture includes departmental access switches, switching infrastructure for connectivity to network services, a router, and an ISP-connected external network.
+The network is designed to support the school's departments through logical segmentation, structured IP addressing, and centralized network services.
 
-The design uses VLANs to separate departmental traffic logically and VLSM to allocate IP address space according to network requirements.
+The topology below illustrates the network layout, including departmental devices, switching infrastructure, routing, and the connection to the simulated external network.
+
+![Senior High School Network Topology](screenshots/Topology.png)
+
 
 ## Verification
 
-The network was tested to confirm connectivity between an internal departmental PC and an external server in the simulated network. A successful ICMP ping confirmed end-to-end reachability.
+Connectivity was tested from an internal departmental PC to the external server at `198.51.100.10`. A successful ICMP ping demonstrated end-to-end connectivity within the simulated network.
 
-NAT/PAT operation was also verified using the router's NAT translation table and NAT statistics, providing evidence of address translation for traffic originating from the internal network.
+NAT/PAT operation was verified using the router's NAT translation table and statistics.
 
-Screenshots of the network topology, connectivity test, and NAT/PAT verification are included in the `screenshots/` directory.
+### External Server Connectivity
+
+![Successful ping to external server](screenshots/Pinging_external_server.png)
+
+### NAT/PAT Translation Verification
+
+![NAT/PAT verification output](screenshots/nat_Verification.png)
+
+
 
 ## Project Files
 
